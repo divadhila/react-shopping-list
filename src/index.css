@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
 
 :root {
-  --rojo: #8b8d30;
-  --dutch-white: #d7d799;
-  --xanthous: #ebb3b2;
-  --white: #eee7dd;
+  --dark: #1e151c;
+  --light: #59382C;
+  --accent: #db8c94;
+  --white: #FFECDA;
 }
 
 * {
@@ -18,16 +18,18 @@
 
 body {
   font-family: 'Urbanist', sans-serif;
-  background-color: var(--dutch-white);
-  color: var(--rojo);
+  background: var(--white);
+  background-image: linear-gradient(var(--light), var(--accent),  var(--white));
+  color: var(--dark);
   display: flex;
   justify-content: center;
   padding: 2rem;
+  background-attachment: fixed; 
 }
 
 .app {
   background: var(--white);
-  border: 2px solid var(--rojo);
+  border: 2px solid var(--dark);
   width: 520px;
   min-height: 90vh;
   display: flex;
@@ -41,17 +43,17 @@ h1 {
   font-weight: 300;
   font-size: 2.6rem;
   letter-spacing: 2px;
-  color: var(--rojo);
+  color: var(--dark);
   padding: 1.2rem 0 0.3rem;
-  border-top: 12px solid var(--rojo);
-  border-bottom: 2px solid var(--rojo);
-  background-color: var(--xanthous);
+  border-top: 12px solid var(--dark);
+  border-bottom: 2px solid var(--dark);
+  background-color: var(--accent);
 }
 
 /* FORM */
 .add-form {
   padding: 1rem;
-  border-bottom: 2px solid var(--rojo);
+  border-bottom: 2px solid var(--dark);
   text-align: center;
   background-color: var(--white);
 }
@@ -60,7 +62,7 @@ h1 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.6rem;
-  color: var(--rojo);
+  color: var(--dark);
 }
 
 .add-form div {
@@ -72,16 +74,16 @@ h1 {
 
 .add-form select,
 .add-form input {
-  border: 1px solid var(--rojo);
+  border: 1px solid var(--dark);
   border-radius: 0.3rem;
   padding: 0.4rem;
   font-size: 0.9rem;
   background: var(--white);
-  color: var(--rojo);
+  color: var(--dark);
 }
 
 .add-form button {
-  background-color: var(--rojo);
+  background-color: var(--dark);
   color: var(--white);
   border: none;
   border-radius: 0.4rem;
@@ -93,15 +95,15 @@ h1 {
 }
 
 .add-form button:hover {
-    background-color: var(--xanthous);
-    color: var(--rojo);
+    background-color: var(--accent);
+    color: var(--dark);
     transform: scale(1.05);
 }
 
 /* LIST */
 .list {
   flex: 1;
-  border: 2px solid var(--rojo);
+  border: 2px solid var(--dark);
   margin: 2rem;
   padding: 1rem;
   display: flex;
@@ -120,18 +122,18 @@ h1 {
   font-size: 0.95rem;
   border-bottom: 1px solid #ccc;
   padding: 0.3rem 0;
-  color: var(--rojo);
+  color: var(--dark);
 }
 
 .list input[type='checkbox'] {
   margin-right: 0.6rem;
-  accent-color: var(--rojo);
+  accent-color: var(--dark);
 }
 
 .list li button {
   background: none;
   border: none;
-  color: var(--rojo);
+  color: var(--dark);
   font-size: 1.1rem;
   cursor: pointer;
   margin-left: auto;
@@ -139,28 +141,28 @@ h1 {
 
 /* ACTIONS */
 .actions {
-  border-top: 2px solid var(--rojo);
-  border-bottom: 2px solid var(--rojo);
+  border-top: 2px solid var(--dark);
+  border-bottom: 2px solid var(--dark);
   text-align: center;
   padding: 1rem;
   background-color: var(--white);
 }
 
 .actions select {
-  border: 1px solid var(--rojo);
+  border: 1px solid var(--dark);
   background: var(--white);
   padding: 0.4rem 0.8rem;
   font-size: 0.85rem;
   margin: 0 0.5rem;
   cursor: pointer;
   border-radius: 0.4rem;
-  color: var(--rojo);
+  color: var(--dark);
 }
 
 .actions button {
-    background-color: var(--xanthous);
-    color: var(--rojo);
-    border: 1px solid var(--rojo);
+    background-color: var(--accent);
+    color: var(--dark);
+    border: 1px solid var(--dark);
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-weight: bold;
@@ -171,11 +173,11 @@ h1 {
 /* FOOTER */
 .stats {
   flex: 0;
-  border-top: 2px solid var(--rojo);
+  border-top: 2px solid var(--dark);
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  color: var(--rojo);
+  color: var(--dark);
   text-align: left;
-  background-color: var(--xanthous);
-  border-bottom: 10px solid var(--rojo);
+  background-color: var(--accent);
+  border-bottom: 10px solid var(--dark);
 }
